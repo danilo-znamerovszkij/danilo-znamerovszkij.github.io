@@ -1,0 +1,64 @@
+{
+  "name": "colour-contrast-checker",
+  "version": "2.0.0",
+  "description": "WCAG accessibility colour contrast checker",
+  "license": "ISC",
+  "author": {
+    "name": "Alex Clapperton",
+    "email": "hi@alexclapperton.co.uk",
+    "url": "https://alexclapperton.co.uk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pushedskydiver/Colour-Contrast-Checker"
+  },
+  "dependencies": {
+    "chroma-js": "2.0.3",
+    "lodash.round": "^4.0.4",
+    "lodash.throttle": "^4.1.1",
+    "react": "16.9.0",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-dom": "16.9.0",
+    "react-router-dom": "5.0.1",
+    "react-scripts": "^3.4.4",
+    "react-snap": "^1.22.1",
+    "styled-components": "4.3.2",
+    "typescript": "^4.0.5",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "@types/chroma-js": "^2.1.1",
+    "@types/lodash.round": "^4.0.6",
+    "@types/lodash.throttle": "^4.1.6",
+    "@types/node": "^14.14.7",
+    "@types/react": "^16.9.56",
+    "@types/react-copy-to-clipboard": "^4.3.0",
+    "@types/react-dom": "^16.9.9",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/styled-components": "^5.1.4",
+    "@types/webfontloader": "^1.6.32",
+    "enzyme": "3.9.0",
+    "enzyme-adapter-react-16": "1.11.2",
+    "eslint-config-synacor": "^3.0.3",
+    "eslint-plugin-react": "7.12.4",
+    "source-map-explorer": "1.8.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "postbuild": "react-snap",
+    "serve": "npm run build && serve -s build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
